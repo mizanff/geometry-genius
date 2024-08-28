@@ -30,7 +30,7 @@
               <p class="text-center text-2xl font-medium">
                 Area (A) = 0.5 * b * h
               </p>
-              <div>
+              <div class="flex">
                 <input
                   id="triangle-base"
                   class="w-20 text-2xl p-1 rounded-sm"
@@ -54,7 +54,7 @@
                   onclick="calculateTriangleArea()"
                   class="btn btn-primary w-full"
                 >
-                  Buy Now
+                 Calculate
                 </button>
               </div>
             </div>
@@ -79,7 +79,7 @@
               </div>
               <p class="text-2xl">Area:<span id="rectangle-area">0</span><span>cm<sup>2</sup></span></p>
               <div class="card-actions">
-                <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Buy Now</button>
+                <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@
               </div>
               <p class="text-2xl">Area:<span id="parallelogram-area">0</span><span>cm<sup>2</sup></span></p>
               <div class="card-actions">
-                <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Buy Now</button>
+                <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -114,23 +114,24 @@
             </figure>
             <div class="card-body">
               <h2 class="text-2xl font-semibold text-center">Rhombus</h2>
-              <p class="text-center">Area (A) = 0.5 * b * h</p>
-              <div class="flex">
+              <p class="text-center">Area (A) = 0.5 * d<sub>1</sub> * b<sub>2</sub></p>
+              <div class="flex gap-5">
                 <input
-                  class="w-16 text-2xl p-1 rounded-sm"
-                  type="text"
-                  placeholder="b"
+                  class="w-20 text-2xl p-1 rounded-sm"
+                  type="text" id="rhombus-diagonal-radius"
+                  placeholder="diagonal"
                 />
-                <span class="mr-4 ml-2">cm</span>
                 <input
-                  class="w-16 text-2xl p-1 rounded-sm"
-                  type="text"
-                  placeholder="h"
+                  class="w-20 text-2xl p-1 rounded-sm"
+                  type="text" id="rhombus-side-radius"
+                  placeholder="side"
                 />
-                <span>cm</span>
+              </div>
+              <div>
+                <p>Area: <span id="rhombus-area">0</span></p>
               </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>

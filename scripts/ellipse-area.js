@@ -5,3 +5,12 @@ function calculateEllipseArea(){
     setInnerTextById('ellipse-area', area);
 }
 
+// Rhombus
+function calculateRhombusArea(){
+    const diagonalRadius = getInputValueById('rhombus-diagonal-radius');
+    const sideRadius = getInputValueById('rhombus-side-radius')
+    console.log(diagonalRadius, sideRadius);
+    const area = 0.5 * diagonalRadius * sideRadius;
+    setInnerTextById('rhombus-area', area);
+}
+
