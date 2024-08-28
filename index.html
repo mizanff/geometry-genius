@@ -33,14 +33,14 @@
               <div>
                 <input
                   id="triangle-base"
-                  class="w-16 text-2xl p-1 rounded-sm"
+                  class="w-20 text-2xl p-1 rounded-sm"
                   type="text"
                   placeholder="b"
                 />
-                <span class="mr-2 ml-2">cm</span>
+                <span class="mr-4 ml-2">cm</span>
                 <input
                   id="triangle-height"
-                  class="w-16 text-2xl p-1 rounded-sm"
+                  class="w-20 text-2xl p-1 rounded-sm"
                   type="text"
                   placeholder="h"
                 />
@@ -68,13 +68,13 @@
             </figure>
             <div class="card-body">
               <h2 class="text-2xl font-semibold text-center">Rectangle</h2>
-              <p class="text-center text-2xl font-medium">Area: (A) = W * I</p>
+              <p class="text-center text-2xl font-medium">Area: (A) = w * l</p>
               <div class="flex">
                 <!-- rectangle length -->
                <input  type="text" name="" id="rectangle-length" class="w-20 text-2xl p-1 rounded-sm" placeholder="Length">
                <span class="mr-4 ml-2">cm</span>
                <!-- rectangle-width -->
-               <input type="text" name="" id="rectangle-width" class="w-20 text-2xl p-1 rounded-sm" placeholder="rectangle-width">
+               <input type="text" name="" id="rectangle-width" class="w-20 text-2xl p-1 rounded-sm" placeholder="width">
                <span>cm</span>
               </div>
               <p class="text-2xl">Area:<span id="rectangle-area">0</span><span>cm<sup>2</sup></span></p>
@@ -86,27 +86,24 @@
           <!-- Parallelogram-card  -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img src="./images/triangle.png" alt="Shoes" />
+              <img
+                src="images/parallelogram.png"
+                alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="text-2xl font-semibold text-center">Triangle</h2>
-              <p class="text-center">Area (A) = 0.5 * b * h</p>
-              <div>
-                <input
-                  class="w-16 text-2xl p-1 rounded-sm"
-                  type="text"
-                  placeholder="b"
-                />
-                <span class="mr-2 ml-2">cm</span>
-                <input
-                  class="w-16 text-2xl p-1 rounded-sm"
-                  type="text"
-                  placeholder="h"
-                />
-                <span>cm</span>
+              <h2 class="text-2xl font-semibold text-center">Parallelogram</h2>
+              <p class="text-center text-2xl font-medium">Area: (A) = b * h</p>
+              <div class="flex">
+                <!-- parallelogram length -->
+               <input  type="text" name="" id="parallelogram-base" class="w-20 text-2xl p-1 rounded-sm" placeholder="base">
+               <span class="mr-4 ml-2">cm</span>
+               <!-- rectangle-width -->
+               <input type="text" name="" id="parallelogram-height" class="w-20 text-2xl p-1 rounded-sm" placeholder="height">
+               <span>cm</span>
               </div>
+              <p class="text-2xl">Area:<span id="parallelogram-area">0</span><span>cm<sup>2</sup></span></p>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Buy Now</button>
+                <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Buy Now</button>
               </div>
             </div>
           </div>
